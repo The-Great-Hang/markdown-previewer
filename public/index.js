@@ -14,6 +14,7 @@ let App = React.createClass({
     render: function() {    
         return (
             <div className="container-fluid">
+                <Navbar />
                 <div className="row">
                     <div className="col-md-6">
                         <InputField changedHandler={this.inputChanged}/>
@@ -27,6 +28,23 @@ let App = React.createClass({
     }
 });
 
+let Navbar = React.createClass({
+    render: function() {
+        return (
+            <nav className="navbar navbar-inverse navbar-static-top">
+                <a className="navbar-brand"> Markdown Previwer </a>
+                <ul className="nav navbar-nav pull-right">
+                    <li>
+                        <a className="btn btn-social-icon btn-lg btn-github" 
+                            href="https://github.com/The-Great-Hang/markdown-previewer">
+                            <span className="fa fa-github github"></span>
+                        </a>  
+                    </li>
+                </ul>
+            </nav>
+        );
+    }
+})
 let InputField = React.createClass({
 
     render: function() {
