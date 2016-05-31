@@ -60,8 +60,8 @@ let OutputField = React.createClass({
     },
     render: function() {
         return (
-            <div dangerouslySetInnerHTML={this.createMarkup()} />
-        )
+            <div className="outputPanel" dangerouslySetInnerHTML={this.createMarkup()} />
+        );
     }
 });
 
